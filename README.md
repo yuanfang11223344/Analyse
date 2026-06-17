@@ -4,6 +4,7 @@
 
 ## 当前内容
 
+- [Git 学习笔记](git笔记/README.md) — 19 篇 Git 教程，来源：夜猫子的知识栈
 - [Design Compiler Training Fudan](reports/design-compiler-training-fudan/INDEX.md)
 
 ## 目录约定
