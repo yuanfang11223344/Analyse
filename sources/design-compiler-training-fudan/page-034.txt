@@ -1,0 +1,3 @@
+Case Study: fanout_load & max_fanout_load
+>>set_fanout_load 3.0 OUT1
+>>set_max_fanout 8 [get_designs ADDER]

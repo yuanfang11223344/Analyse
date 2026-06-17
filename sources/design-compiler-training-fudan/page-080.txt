@@ -1,0 +1,5 @@
+Path Delay Calculation
+- To calculate total delay, each path is broken into timing arcs.
+- Each timing arc contributes either a net delay or cell delay
+- All the net and cell timing arcs along the path are added
+together.

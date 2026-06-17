@@ -1,0 +1,12 @@
+set_fanout_load V.S. set_max_fanout
+- set_fanout_load is design envoronment;
+set_max_fanout is a design constraint.
+- Design Compiler models fanout restrictions by
+associating a fanout_load attribute with each input pin
+and a max_fanout attribute with each output (driving)
+pin on a cell.
+- Design Compiler tries to ensure that the sum of the
+fanout load on the output port plus the fanout load of
+cells connected to the output port driver is less than
+the maximum fanout limit of the library, library cell, and
+design.

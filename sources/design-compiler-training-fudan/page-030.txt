@@ -1,0 +1,10 @@
+set_fanout_load
+- You can model the external fanout effects by
+specifying the expected fanout load values on output
+ports with the set_fanout_load command.
+- set_fanout_load 4 {out1}
+- Design Compiler tries to ensure that the sum of the
+fanout load on the output port plus the fanout load of
+cells connected to the output port driver is less than
+the maximum fanout limit of the library, library cell, and
+design.

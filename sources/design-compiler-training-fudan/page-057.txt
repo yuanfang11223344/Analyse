@@ -1,0 +1,9 @@
+set_max_delay & set_min_delay
+-set_max_delay: Specifies a maximum
+delay target for path in the current design.
+-set_max_delay 10.0 -to {Y}
+-set_max_delay 15.0 -from {ff1a ff1b} \
+-through {u1} -to {ff2e}
+-set_max_delay 8.5 -to [get_clocks PHI2]
+-set_min_delay 12.5 –through U1 –to Y
+-set_min_delay 4.0 –from {A1 A2} –to Z5

@@ -1,0 +1,6 @@
+Compile is the “art” of synthesis
+- Logical level optimization
+- flatten : remove structure
+- structure: minimize generic logic
+- Gate level optimization
+- map: make design technology dependent

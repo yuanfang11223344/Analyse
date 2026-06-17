@@ -1,0 +1,9 @@
+set_max_transition (ns)
+-Port: late_riser
+-set_max_transition 2.0 late_riser
+-Design: TEST
+-set_max_transition 2.0 TEST
+-Clock Path: clk1
+-set_max_transition 2.0 [get_clocks clk1]
+-Data Path: clk1
+- set_max_transition 2.0 -datapath [get_clocks clk1]

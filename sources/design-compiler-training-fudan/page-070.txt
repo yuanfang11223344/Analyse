@@ -1,0 +1,14 @@
+Sequential Mapping
+- Optimize the mapping
+to sequential cells
+from technology
+library.
+- Analyze combinational
+surrounding a
+sequential cell to see if
+it can absorb the logic
+attribute with HDL.
+- Try to save speed and
+area by using a more
+complex sequential
+cell.

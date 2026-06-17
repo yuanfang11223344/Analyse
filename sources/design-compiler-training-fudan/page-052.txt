@@ -1,0 +1,8 @@
+Optimization Constraints
+The optimization constraints comprise
+-Timing constraints (performance and
+speed)
+-Input and output delays (synchronous paths)
+-Minimum and maximum delay (asynchronous
+paths)
+-Maximum area (number of gates)

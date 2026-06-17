@@ -1,0 +1,9 @@
+Design Rule Constraints
+- Design rules can not be violated at any cost, even if it
+will violate the timing and area goal.
+- Rule Constraints Demand:
+- set_max_transition
+- set_max_fanout (explained in last chapter)
+- set_max_capacitance
+- set_cell_degradation
+- set_min_capacitance

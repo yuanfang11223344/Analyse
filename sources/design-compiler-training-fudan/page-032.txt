@@ -1,0 +1,7 @@
+Design Constraints: set_max_fanout
+-set_max_fanout is a design constraints.
+-set_max_fanout: set the max_fanout
+attribute to a specified value on input
+ports and designs
+-set_max_fanout 20.0 going_places
+-set_max_fanout 18.5 TEST

@@ -1,0 +1,7 @@
+Timing Constraints
+- Use the create_clock command to specify a clock.
+- Use the set_input_delay and set_output_delay
+commands to specify the input and output port timing
+specifications.
+- Use the set_max_delay and set_min_delay commands
+to specify these point-to-point delays.

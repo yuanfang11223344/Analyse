@@ -1,0 +1,6 @@
+- set _wire_load_model -name “10*10” -library my_lib.db
+- current_design LOW
+- set_wire_load_model -name “10*10”
+- current_design TOP
+- set_wire_load_mode enclosed
+- set_wire_load_model -name “20*20MIN” -min

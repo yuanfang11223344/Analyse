@@ -1,0 +1,6 @@
+Clock Tree Modeling
+- Two parameter to model:
+- Specify clock network latency
+- set_clock_latency –rise tr –fall tf [get_ports TCK]
+- Specify uncertainty(skew) of clock network
+- set_clock_uncertainty –rise tp –fall tm [get_ports TCK]

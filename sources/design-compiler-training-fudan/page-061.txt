@@ -1,0 +1,10 @@
+Constraints Priority
+- During the optimization ,there exists a constraint
+priority relationship
+- Design Rule Constraint
+- Timing constraint
+- Power constraint
+- Area constraint
+- Using set_cost_priority command to modify the
+order
+set_cost_priority [-default] [-delay] [-cost_list]

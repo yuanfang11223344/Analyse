@@ -1,0 +1,9 @@
+Case Study
+- An input pin normally has a fanout load of 1, but it can
+have a higher value.
+- The fanout load imposed by a driven cell (U3) is not
+necessarily 1.0. Library developers can assign higher
+fanout loads (for example, 2.0) to model internal cell
+fanout effects.
+- You can also set a fanout load on an output port (OUT1)
+to model external fanout effects.

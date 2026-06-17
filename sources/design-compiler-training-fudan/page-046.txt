@@ -1,0 +1,5 @@
+set_max_transition (ns)
+- set_max_transition: set the maximum
+transition time for specified clocks, ports, or
+designs.
+set_max_transition 1.5 all_inputs

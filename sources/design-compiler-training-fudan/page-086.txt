@@ -1,0 +1,8 @@
+Effect of Clock Tree Modeling on Hold
+Time
+- Assumed library (Flip Flop) hold time requirement = 1ns
+create_clock –period 10 –waveform {0 5} [get_ports TCK]
+set_clock_latency –rise 1 –fall 2 [get_ports TCK]
+set_clock_uncertainty –rise 0.5 –fall 0.8 [get_ports TCK]
+- Hold time check = (clock_edge + edge_delay +uncertainty +
+lib_hold)

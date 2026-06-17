@@ -1,0 +1,7 @@
+Gate Level Optimization
+- Select components to meet timing, design rule
+& area goals specified for the circuit.
+- Has a local effect on the area/speed
+characteristic of a design.
+- Strategy: combinational mapping & sequential
+mapping.

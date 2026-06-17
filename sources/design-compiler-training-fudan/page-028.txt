@@ -1,0 +1,9 @@
+Setting Output Loading Capacitance (pF)
+-set_load
+- set_load : Sets the load attribute to a specified
+value on specified ports and nets.
+- load_of: Returns the capacitance of the specified
+library cell pin.
+- Example:
+set MAX_LOAD [load_of slow/AND2X1/A]
+set_load [expr $MAX_LOAD*15] [all_outputs]

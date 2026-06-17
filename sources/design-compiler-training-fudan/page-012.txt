@@ -1,0 +1,12 @@
+Library Specification
+- search_path: the path to search for unsolved reference
+library or design.
+- link_library: the library used for interpreting input
+description, any cells instantiated in your HDL code,
+Wire Load or Operating Condition models used during
+synthesis.
+- target_library: the ASIC technology that the design
+map to.
+- symbol_library: Used during schematic generation.
+- synthetic_library: designware library to be used. (IP)
+You can write them to .synopsys_dc.setup file.

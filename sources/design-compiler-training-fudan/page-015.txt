@@ -1,0 +1,9 @@
+Read Design
+ step1: read, read_verilog, read_vhdl
+或 analyze + elaborate (analyze HDL
+code and establish Boolean functions)
+- Difference?
+- step2: link (resolve design reference)
+- step3: uniquify (removes multiply-instantiated
+hierarchy in the current design by creating
+a unique design for each cell instance)

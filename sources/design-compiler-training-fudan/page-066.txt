@@ -1,0 +1,6 @@
+Structure
+- Factors out common sub-expression as
+intermediate variable
+- Useful for speed optimization as well as area
+optimization
+- Example: set_structure true|false

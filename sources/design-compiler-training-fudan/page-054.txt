@@ -1,0 +1,4 @@
+create_clock
+-create_clock: creates a clock object and
+defines its waveform in the current design.
+- create_clock “PHI1” –period 10 –waveform {5.0 9.5}

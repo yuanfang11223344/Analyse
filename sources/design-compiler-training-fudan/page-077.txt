@@ -1,0 +1,8 @@
+Timing Groups
+- How to organize timing paths into group?
+- Paths are grouped according to the clocks controlling
+their endpoints.
+- Each clock will be associated with a set paths called a
+path group.
+- The default path group comprises all paths not
+associated with a clock.

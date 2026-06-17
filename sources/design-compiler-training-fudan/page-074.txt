@@ -1,0 +1,8 @@
+Basic Conceptions of STA
+- Timing paths and groups
+- Delay calculation
+- Setup and hold time check
+- Gated clocks check
+- Removal and Recovery time check
+- Clock tree modeling
+- Input delay and output delay

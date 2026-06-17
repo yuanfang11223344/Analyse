@@ -1,0 +1,6 @@
+Modeling Source Latency
+- Source latency is the propagation time from the actual clock
+origin to the clock definition point in the design
+create_clock –period 10 –waveform {0 5} [get_ports TCK]
+set_clock_latency –source 3 [get_clocks TCK]
+set_clock_latency 1 [get_clocks TCK]

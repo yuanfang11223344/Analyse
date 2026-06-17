@@ -1,0 +1,2 @@
+Setting Wire Load Mode
+dc_shell-t> set_wire_load_mode <top|enclosed|segmented>

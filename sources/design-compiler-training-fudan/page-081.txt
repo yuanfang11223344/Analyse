@@ -1,0 +1,9 @@
+Setup and Hold Time Check
+- Setup Time: The length of time that data must stabilize
+before the clock transition.
+The maximum data path is used to determine if setup
+constraint is met.
+- Hold time: The length of time that data must remain stable
+at the input pin after the active clock transition.
+The minimum data path is used to determine if hold time is
+met.

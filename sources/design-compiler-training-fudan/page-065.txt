@@ -1,0 +1,6 @@
+Logical Level Optimization
+- Operate with boolean representation of circuit .
+- Has a global effect on the overall area/speed
+characteristic of a design.
+- Strategy: structure or flatten, if both are true, the
+design is first flatten and then structured .

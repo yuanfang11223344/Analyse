@@ -1,0 +1,11 @@
+set_max_capacitance
+- It is set as a pin-level attribute that defines the
+maximum total capacitive load that an output pin can
+drive.
+- The max_capacitance design rule constraint allows you
+to control the capacitance of nets directly. (The design
+rule constraints max_fanout and max_transition limit
+the actual capacitance of nets indirectly.)
+- The max_capacitance attribute functions
+independently, so you can use it with max_fanout and
+max_transition.

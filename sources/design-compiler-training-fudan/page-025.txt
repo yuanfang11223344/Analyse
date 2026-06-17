@@ -1,0 +1,5 @@
+Set Operating Conditions
+- Operating condition model scales components
+delay, directs the optimizer to simulate variations
+in process, temperature and voltage
+- set_operating_conditions

@@ -1,0 +1,11 @@
+How to generate results and report
+attributes for synthesis
+- Attributes to Report
+report_design, report_clock, report_port,
+report_net, report_hierarch, report_area,
+report_reference, report_constraint
+- Results to generate
+write –output –format ddc mapped.ddc
+write –output –format verilog mapped.v
+write_sdc mapped.sdc
+write_sdf mapped.sdf

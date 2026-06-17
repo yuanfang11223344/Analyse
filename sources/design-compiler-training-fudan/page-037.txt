@@ -1,0 +1,4 @@
+Wire Load Model
+- A wire load model is an estimate of a net’s RC
+parasitics based on the net’s fanout.
+Example: dc_shell-t> set_wire_load_model 10x10

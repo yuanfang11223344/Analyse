@@ -1,0 +1,12 @@
+Set Input Pulling Resistance (khoms)
+- set_drive
+- set_drive_cell : sets attributes on input or inout
+ports of the current design that specify that a
+library cell or output pin of a library cell drives the
+specified ports.
+- set_driving_cell -lib_cell AND2 {IN1}
+- set_driving_cell -lib_cell INV -pin Z \
+-library tech_lib [all_inputs]
+- set_driving_cell -lib_cell INV -don’t_scale {IN1}
+- set_driving_cell -rise -lib_cell BUF1_TS -pin Z {IN1}
+- set_driving_cell -fall -lib_cell DFF_TS -pin Q {IN1}

@@ -1,0 +1,8 @@
+- Design Rule Constraints: technology-specific
+restriction.
+- Optimization Constraints: design goals and
+requirements.
+- During compiling, Design Compiler attempts to
+meet all constraints.
+Design Rule Constraints
+and Optimization Constraints

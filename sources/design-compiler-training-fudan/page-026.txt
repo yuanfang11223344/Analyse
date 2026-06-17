@@ -1,0 +1,12 @@
+Set Input Pulling Resistance (khoms)
+- set_drive
+- set_drive : Sets the rise_drive or fall_drive
+attributes to specified resistance values on
+specified input and inout ports.
+- set_drive 2 .0 {A B C}; or set_drive 2 .0 “A B C”;
+- set_drive 2 [all_inputs];
+- set_drive -rise 1 [get_ports B];
+- set_drive -rise drive_of(-rise TECH_LIBRARY/INVERTER/OUT) \
+[get_ports C]
+ drive_of : Returns the drive resistance value of the
+specified library cell pin.

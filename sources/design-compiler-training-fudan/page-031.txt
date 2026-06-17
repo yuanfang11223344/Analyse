@@ -1,0 +1,9 @@
+set_load V.S. set_fanout_load
+- fanout load is not the same as load.
+- fanout load is a unitless value that represents a
+numerical contribution to the total fanout. Load is a
+capacitance value.
+- Design Compiler uses fanout load primarily to measure
+the fanout presented by each input pin. An input pin
+normally has a fanout load of 1, but it can have a
+higher value.

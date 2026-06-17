@@ -1,0 +1,6 @@
+How to start DC
+1 unix/linux> dc_shell-t
+dc_shell> source scripts/xx.tcl -e -v
+2 unix/linux> dc_shell –f scripts/xx.tcl (|tee ./log/run.log)
+3 unix/linux> design_vision
+design_vision> source scripts/xx.tcl -e -v

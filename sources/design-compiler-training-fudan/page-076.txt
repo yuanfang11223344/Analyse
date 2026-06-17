@@ -1,0 +1,4 @@
+- Input Paths
+- Output Paths
+- Register-to-Register Paths
+- Combinational Paths

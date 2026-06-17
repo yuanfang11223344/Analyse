@@ -1,0 +1,11 @@
+.synopsys_dc.setup example
+lappend search_path [list ./src ./scripts \
+/net/home/EDAs/synopsys/syn/libraries/syn\
+/net/sunb2i/export/home/xyzeng/xiaohao/fft_2k_4k_8k/dc/lib\
+]
+set target_library "smic18_tt.db"
+set link_library " * $target_library smic18IO_line_tt.db\
+smic18IO_stagger_tt.db dw_foundation.sldb"
+set symbol_library " smic18.sdb "
+set synthetic_library " dw_foundation.sldb “
+……

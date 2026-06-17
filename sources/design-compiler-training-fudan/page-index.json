@@ -1,0 +1,674 @@
+[
+  {
+    "page": 1,
+    "chars": 71,
+    "title": "Design Compiler",
+    "sample": "Design Compiler | JoyShockley | School of Microelectronics | Fudan University"
+  },
+  {
+    "page": 2,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 3,
+    "chars": 10,
+    "title": "Map to lib",
+    "sample": "Map to lib"
+  },
+  {
+    "page": 4,
+    "chars": 126,
+    "title": "Synthesis Is Constraint-Driven",
+    "sample": "Synthesis Is Constraint-Driven | You set the goals (through constraints) | Design Compiler optimizes the design to meet your goals"
+  },
+  {
+    "page": 5,
+    "chars": 125,
+    "title": "Synthesis Is Path-Based",
+    "sample": "Synthesis Is Path-Based | Design Compiler uses Static Timing Analysis (STA) | to calculate the timing of the paths in the design."
+  },
+  {
+    "page": 6,
+    "chars": 6,
+    "title": "Agenda",
+    "sample": "Agenda"
+  },
+  {
+    "page": 7,
+    "chars": 6,
+    "title": "Agenda",
+    "sample": "Agenda"
+  },
+  {
+    "page": 8,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 9,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 10,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 11,
+    "chars": 17,
+    "title": "Basic Design Flow",
+    "sample": "Basic Design Flow"
+  },
+  {
+    "page": 12,
+    "chars": 488,
+    "title": "Library Specification",
+    "sample": "Library Specification | - search_path: the path to search for unsolved reference | library or design. | - link_library: the library used for interpreting input"
+  },
+  {
+    "page": 13,
+    "chars": 392,
+    "title": ".synopsys_dc.setup example",
+    "sample": ".synopsys_dc.setup example | lappend search_path [list ./src ./scripts \\ | /net/home/EDAs/synopsys/syn/libraries/syn\\ | /net/sunb2i/export/home/xyzeng/xiaohao/fft_2k_4k_8k/dc/lib\\"
+  },
+  {
+    "page": 14,
+    "chars": 575,
+    "title": "- To specify technology libraries, you must specify the",
+    "sample": "- To specify technology libraries, you must specify the | target library and link library. | - Design Compiler uses the target library to build a circuit. During | mapping, Design Compiler selects functionally correct gates"
+  },
+  {
+    "page": 15,
+    "chars": 311,
+    "title": "Read Design",
+    "sample": "Read Design |  step1: read, read_verilog, read_vhdl | 或 analyze + elaborate (analyze HDL | code and establish Boolean functions)"
+  },
+  {
+    "page": 16,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 17,
+    "chars": 332,
+    "title": "Example",
+    "sample": "Example | 1 dc_shell-t> read_verilog top.v | dc_shell-t> read_verilog sub_design.v | dc_shell-t> current_design top"
+  },
+  {
+    "page": 18,
+    "chars": 27,
+    "title": "Design Objects In Synthesis",
+    "sample": "Design Objects In Synthesis"
+  },
+  {
+    "page": 19,
+    "chars": 35,
+    "title": "Design Objects: Verilog Perspective",
+    "sample": "Design Objects: Verilog Perspective"
+  },
+  {
+    "page": 20,
+    "chars": 37,
+    "title": "Design Objects: Schematic Perspective",
+    "sample": "Design Objects: Schematic Perspective"
+  },
+  {
+    "page": 21,
+    "chars": 173,
+    "title": "Unit in Standard Library",
+    "sample": "Unit in Standard Library | -time_unit: “1ns” | -voltage_unit: “1V” | -Current_unit: “1mA”"
+  },
+  {
+    "page": 22,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 23,
+    "chars": 28,
+    "title": "2. Define Design Environment",
+    "sample": "2. Define Design Environment"
+  },
+  {
+    "page": 24,
+    "chars": 46,
+    "title": "Conmands used to Define the",
+    "sample": "Conmands used to Define the | Design Environment"
+  },
+  {
+    "page": 25,
+    "chars": 185,
+    "title": "Set Operating Conditions",
+    "sample": "Set Operating Conditions | - Operating condition model scales components | delay, directs the optimizer to simulate variations | in process, temperature and voltage"
+  },
+  {
+    "page": 26,
+    "chars": 449,
+    "title": "Set Input Pulling Resistance (khoms)",
+    "sample": "Set Input Pulling Resistance (khoms) | - set_drive | - set_drive : Sets the rise_drive or fall_drive | attributes to specified resistance values on"
+  },
+  {
+    "page": 27,
+    "chars": 498,
+    "title": "Set Input Pulling Resistance (khoms)",
+    "sample": "Set Input Pulling Resistance (khoms) | - set_drive | - set_drive_cell : sets attributes on input or inout | ports of the current design that specify that a"
+  },
+  {
+    "page": 28,
+    "chars": 297,
+    "title": "Setting Output Loading Capacitance (pF)",
+    "sample": "Setting Output Loading Capacitance (pF) | -set_load | - set_load : Sets the load attribute to a specified | value on specified ports and nets."
+  },
+  {
+    "page": 29,
+    "chars": 210,
+    "title": "Setting Output Loading Capacitance (pF)",
+    "sample": "Setting Output Loading Capacitance (pF) | -set_load | - set _load 2 in1 | - set port_load [expr 2.5+3*[load_of tech_lib/IV/A]]"
+  },
+  {
+    "page": 30,
+    "chars": 413,
+    "title": "set_fanout_load",
+    "sample": "set_fanout_load | - You can model the external fanout effects by | specifying the expected fanout load values on output | ports with the set_fanout_load command."
+  },
+  {
+    "page": 31,
+    "chars": 367,
+    "title": "set_load V.S. set_fanout_load",
+    "sample": "set_load V.S. set_fanout_load | - fanout load is not the same as load. | - fanout load is a unitless value that represents a | numerical contribution to the total fanout. Load is a"
+  },
+  {
+    "page": 32,
+    "chars": 229,
+    "title": "Design Constraints: set_max_fanout",
+    "sample": "Design Constraints: set_max_fanout | -set_max_fanout is a design constraints. | -set_max_fanout: set the max_fanout | attribute to a specified value on input"
+  },
+  {
+    "page": 33,
+    "chars": 519,
+    "title": "set_fanout_load V.S. set_max_fanout",
+    "sample": "set_fanout_load V.S. set_max_fanout | - set_fanout_load is design envoronment; | set_max_fanout is a design constraint. | - Design Compiler models fanout restrictions by"
+  },
+  {
+    "page": 34,
+    "chars": 107,
+    "title": "Case Study: fanout_load & max_fanout_load",
+    "sample": "Case Study: fanout_load & max_fanout_load | >>set_fanout_load 3.0 OUT1 | >>set_max_fanout 8 [get_designs ADDER]"
+  },
+  {
+    "page": 35,
+    "chars": 362,
+    "title": "Case Study",
+    "sample": "Case Study | - An input pin normally has a fanout load of 1, but it can | have a higher value. | - The fanout load imposed by a driven cell (U3) is not"
+  },
+  {
+    "page": 36,
+    "chars": 9,
+    "title": "Net Delay",
+    "sample": "Net Delay"
+  },
+  {
+    "page": 37,
+    "chars": 149,
+    "title": "Wire Load Model",
+    "sample": "Wire Load Model | - A wire load model is an estimate of a net’s RC | parasitics based on the net’s fanout. | Example: dc_shell-t> set_wire_load_model 10x10"
+  },
+  {
+    "page": 38,
+    "chars": 78,
+    "title": "Setting Wire Load Mode",
+    "sample": "Setting Wire Load Mode | dc_shell-t> set_wire_load_mode <top|enclosed|segmented>"
+  },
+  {
+    "page": 39,
+    "chars": 357,
+    "title": "Hierarchical Wire Load Models",
+    "sample": "Hierarchical Wire Load Models | - DC supports three modes for determining which wire | load model to use for nets that cross hierarchical | boundaries:"
+  },
+  {
+    "page": 40,
+    "chars": 561,
+    "title": "Hierarchical Wire Load Models",
+    "sample": "Hierarchical Wire Load Models | - Enclose: DC uses the wire load model of the smallest design that | fully encloseds the net. If the design enclosing the net has no wire load | model, the tool traverses the design hierearchy upward until it finds a wire"
+  },
+  {
+    "page": 41,
+    "chars": 207,
+    "title": "- set _wire_load_model -name “10*10” -library my_lib.db",
+    "sample": "- set _wire_load_model -name “10*10” -library my_lib.db | - current_design LOW | - set_wire_load_model -name “10*10” | - current_design TOP"
+  },
+  {
+    "page": 42,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 43,
+    "chars": 72,
+    "title": "Design Constraints: Design Rule Constraints",
+    "sample": "Design Constraints: Design Rule Constraints | and Optimization Constraints"
+  },
+  {
+    "page": 44,
+    "chars": 241,
+    "title": "- Design Rule Constraints: technology-specific",
+    "sample": "- Design Rule Constraints: technology-specific | restriction. | - Optimization Constraints: design goals and | requirements."
+  },
+  {
+    "page": 45,
+    "chars": 281,
+    "title": "Design Rule Constraints",
+    "sample": "Design Rule Constraints | - Design rules can not be violated at any cost, even if it | will violate the timing and area goal. | - Rule Constraints Demand:"
+  },
+  {
+    "page": 46,
+    "chars": 152,
+    "title": "set_max_transition (ns)",
+    "sample": "set_max_transition (ns) | - set_max_transition: set the maximum | transition time for specified clocks, ports, or | designs."
+  },
+  {
+    "page": 47,
+    "chars": 249,
+    "title": "set_max_transition (ns)",
+    "sample": "set_max_transition (ns) | -Port: late_riser | -set_max_transition 2.0 late_riser | -Design: TEST"
+  },
+  {
+    "page": 48,
+    "chars": 22,
+    "title": "clock path & data path",
+    "sample": "clock path & data path"
+  },
+  {
+    "page": 49,
+    "chars": 454,
+    "title": "set_max_capacitance",
+    "sample": "set_max_capacitance | - It is set as a pin-level attribute that defines the | maximum total capacitive load that an output pin can | drive."
+  },
+  {
+    "page": 50,
+    "chars": 209,
+    "title": "set_max_capacitance",
+    "sample": "set_max_capacitance | - set_max_capacitance 2.0 [get_ports late_riser] | - set_max_capacitance 2.0 [current_design] | - set_max_capacitance 2.0 [get_clocks clk1]"
+  },
+  {
+    "page": 51,
+    "chars": 43,
+    "title": "Summary of Design Rule Commands and",
+    "sample": "Summary of Design Rule Commands and | Objects"
+  },
+  {
+    "page": 52,
+    "chars": 231,
+    "title": "Optimization Constraints",
+    "sample": "Optimization Constraints | The optimization constraints comprise | -Timing constraints (performance and | speed)"
+  },
+  {
+    "page": 53,
+    "chars": 276,
+    "title": "Timing Constraints",
+    "sample": "Timing Constraints | - Use the create_clock command to specify a clock. | - Use the set_input_delay and set_output_delay | commands to specify the input and output port timing"
+  },
+  {
+    "page": 54,
+    "chars": 151,
+    "title": "create_clock",
+    "sample": "create_clock | -create_clock: creates a clock object and | defines its waveform in the current design. | - create_clock “PHI1” –period 10 –waveform {5.0 9.5}"
+  },
+  {
+    "page": 55,
+    "chars": 15,
+    "title": "set_input_delay",
+    "sample": "set_input_delay"
+  },
+  {
+    "page": 56,
+    "chars": 16,
+    "title": "set_output_delay",
+    "sample": "set_output_delay"
+  },
+  {
+    "page": 57,
+    "chars": 322,
+    "title": "set_max_delay & set_min_delay",
+    "sample": "set_max_delay & set_min_delay | -set_max_delay: Specifies a maximum | delay target for path in the current design. | -set_max_delay 10.0 -to {Y}"
+  },
+  {
+    "page": 58,
+    "chars": 323,
+    "title": "Optimization Constraints",
+    "sample": "Optimization Constraints | - Optimization constraints, in order of attention are | - Maximum delay | - Minimum delay"
+  },
+  {
+    "page": 59,
+    "chars": 318,
+    "title": "Timing Constraints for Sequential",
+    "sample": "Timing Constraints for Sequential | Circuit | - create_clock: define your clock’s waveform & | respect the set-up time requirements of all"
+  },
+  {
+    "page": 60,
+    "chars": 217,
+    "title": "Setting Area Constraint",
+    "sample": "Setting Area Constraint | - Area Unit: | - Equivalent gate counts | - um2"
+  },
+  {
+    "page": 61,
+    "chars": 282,
+    "title": "Constraints Priority",
+    "sample": "Constraints Priority | - During the optimization ,there exists a constraint | priority relationship | - Design Rule Constraint"
+  },
+  {
+    "page": 62,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 63,
+    "chars": 32,
+    "title": "How to map and optimize a design",
+    "sample": "How to map and optimize a design"
+  },
+  {
+    "page": 64,
+    "chars": 193,
+    "title": "Compile is the “art” of synthesis",
+    "sample": "Compile is the “art” of synthesis | - Logical level optimization | - flatten : remove structure | - structure: minimize generic logic"
+  },
+  {
+    "page": 65,
+    "chars": 255,
+    "title": "Logical Level Optimization",
+    "sample": "Logical Level Optimization | - Operate with boolean representation of circuit . | - Has a global effect on the overall area/speed | characteristic of a design."
+  },
+  {
+    "page": 66,
+    "chars": 167,
+    "title": "Structure",
+    "sample": "Structure | - Factors out common sub-expression as | intermediate variable | - Useful for speed optimization as well as area"
+  },
+  {
+    "page": 67,
+    "chars": 271,
+    "title": "Flatten",
+    "sample": "Flatten | - Flatten is default OFF | - Remove all intermediate variable | - Result a two-level sum-of-product form"
+  },
+  {
+    "page": 68,
+    "chars": 234,
+    "title": "Gate Level Optimization",
+    "sample": "Gate Level Optimization | - Select components to meet timing, design rule | & area goals specified for the circuit. | - Has a local effect on the area/speed"
+  },
+  {
+    "page": 69,
+    "chars": 251,
+    "title": "Combinational Mapping",
+    "sample": "Combinational Mapping | - Mapping rearranges | components, | combining and re-"
+  },
+  {
+    "page": 70,
+    "chars": 264,
+    "title": "Sequential Mapping",
+    "sample": "Sequential Mapping | - Optimize the mapping | to sequential cells | from technology"
+  },
+  {
+    "page": 71,
+    "chars": 474,
+    "title": "Compile Command and Options",
+    "sample": "Compile Command and Options | - compile –map_effort medium | high | - high, it does critical path re-synthesis, but it will use | more CPU time, in some case the action of compile"
+  },
+  {
+    "page": 72,
+    "chars": 342,
+    "title": "How to generate results and report",
+    "sample": "How to generate results and report | attributes for synthesis | - Attributes to Report | report_design, report_clock, report_port,"
+  },
+  {
+    "page": 73,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 74,
+    "chars": 206,
+    "title": "Basic Conceptions of STA",
+    "sample": "Basic Conceptions of STA | - Timing paths and groups | - Delay calculation | - Setup and hold time check"
+  },
+  {
+    "page": 75,
+    "chars": 31,
+    "title": "Timing Paths in Design Compiler",
+    "sample": "Timing Paths in Design Compiler"
+  },
+  {
+    "page": 76,
+    "chars": 79,
+    "title": "- Input Paths",
+    "sample": "- Input Paths | - Output Paths | - Register-to-Register Paths | - Combinational Paths"
+  },
+  {
+    "page": 77,
+    "chars": 273,
+    "title": "Timing Groups",
+    "sample": "Timing Groups | - How to organize timing paths into group? | - Paths are grouped according to the clocks controlling | their endpoints."
+  },
+  {
+    "page": 78,
+    "chars": 21,
+    "title": "Timing Paths Exercise",
+    "sample": "Timing Paths Exercise"
+  },
+  {
+    "page": 79,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 80,
+    "chars": 221,
+    "title": "Path Delay Calculation",
+    "sample": "Path Delay Calculation | - To calculate total delay, each path is broken into timing arcs. | - Each timing arc contributes either a net delay or cell delay | - All the net and cell timing arcs along the path are added"
+  },
+  {
+    "page": 81,
+    "chars": 360,
+    "title": "Setup and Hold Time Check",
+    "sample": "Setup and Hold Time Check | - Setup Time: The length of time that data must stabilize | before the clock transition. | The maximum data path is used to determine if setup"
+  },
+  {
+    "page": 82,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 83,
+    "chars": 234,
+    "title": "Clock Tree Modeling",
+    "sample": "Clock Tree Modeling | - Two parameter to model: | - Specify clock network latency | - set_clock_latency –rise tr –fall tf [get_ports TCK]"
+  },
+  {
+    "page": 84,
+    "chars": 199,
+    "title": "Clock Tree Modeling Example",
+    "sample": "Clock Tree Modeling Example | - create_clock –period 10 –waveform {0 5} [get_ports TCK] | - set_clock_latency –rise 1 –fall 2 [get_ ports TCK] | - set_clock_uncertainty –rise 0.8 –fall 0.5 [get_ ports TCK]"
+  },
+  {
+    "page": 85,
+    "chars": 339,
+    "title": "Effect of Clock Tree Modeling on Setup",
+    "sample": "Effect of Clock Tree Modeling on Setup | Time | - Assumed library (Flip Flop) setup time requirement = 1ns | create_clock –period 10 –waveform {0 5} [get_ports TCK]"
+  },
+  {
+    "page": 86,
+    "chars": 334,
+    "title": "Effect of Clock Tree Modeling on Hold",
+    "sample": "Effect of Clock Tree Modeling on Hold | Time | - Assumed library (Flip Flop) hold time requirement = 1ns | create_clock –period 10 –waveform {0 5} [get_ports TCK]"
+  },
+  {
+    "page": 87,
+    "chars": 275,
+    "title": "Modeling Source Latency",
+    "sample": "Modeling Source Latency | - Source latency is the propagation time from the actual clock | origin to the clock definition point in the design | create_clock –period 10 –waveform {0 5} [get_ports TCK]"
+  },
+  {
+    "page": 88,
+    "chars": 28,
+    "title": "Constraining the Input Paths",
+    "sample": "Constraining the Input Paths"
+  },
+  {
+    "page": 89,
+    "chars": 28,
+    "title": "Constraining the Input Paths",
+    "sample": "Constraining the Input Paths"
+  },
+  {
+    "page": 90,
+    "chars": 29,
+    "title": "Constraining the Output Paths",
+    "sample": "Constraining the Output Paths"
+  },
+  {
+    "page": 91,
+    "chars": 29,
+    "title": "Constraining the Output Paths",
+    "sample": "Constraining the Output Paths"
+  },
+  {
+    "page": 92,
+    "chars": 79,
+    "title": "DC Timing Reports",
+    "sample": "DC Timing Reports | - Use the report_timing command to access the | timing reports."
+  },
+  {
+    "page": 93,
+    "chars": 1064,
+    "title": "Startpoint: ARM7TDMI/debuger/tms_latch_reg/CKN",
+    "sample": "Startpoint: ARM7TDMI/debuger/tms_latch_reg/CKN | (internal path startpoint clocked by HCLK) | Endpoint: ARM7TDMI/debuger/tms_s_reg | (falling edge-triggered flip-flop clocked by HCLK)"
+  },
+  {
+    "page": 94,
+    "chars": 39,
+    "title": "Timing Report: Path Information Section",
+    "sample": "Timing Report: Path Information Section"
+  },
+  {
+    "page": 95,
+    "chars": 33,
+    "title": "Timing Report: Path Delay Section",
+    "sample": "Timing Report: Path Delay Section"
+  },
+  {
+    "page": 96,
+    "chars": 36,
+    "title": "Timing Report: Path Required Section",
+    "sample": "Timing Report: Path Required Section"
+  },
+  {
+    "page": 97,
+    "chars": 30,
+    "title": "Timing Report: Summary Section",
+    "sample": "Timing Report: Summary Section"
+  },
+  {
+    "page": 98,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 99,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 100,
+    "chars": 21,
+    "title": "What is partitioning?",
+    "sample": "What is partitioning?"
+  },
+  {
+    "page": 101,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 102,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 103,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 104,
+    "chars": 16,
+    "title": "Avoid Glue Logic",
+    "sample": "Avoid Glue Logic"
+  },
+  {
+    "page": 105,
+    "chars": 32,
+    "title": "Remove Glue Logic Between Blocks",
+    "sample": "Remove Glue Logic Between Blocks"
+  },
+  {
+    "page": 106,
+    "chars": 199,
+    "title": "This partitioning is recommended due to:",
+    "sample": "This partitioning is recommended due to: | - Possible technology-dependent ( “black box”) I/O pad cells | - Possible untestable “Divide By” clock generation | - Possible technology-dependent JTAG circuitry"
+  },
+  {
+    "page": 107,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 108,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 109,
+    "chars": 0,
+    "title": "(no extractable text)",
+    "sample": ""
+  },
+  {
+    "page": 110,
+    "chars": 211,
+    "title": "How to start DC",
+    "sample": "How to start DC | 1 unix/linux> dc_shell-t | dc_shell> source scripts/xx.tcl -e -v | 2 unix/linux> dc_shell –f scripts/xx.tcl (|tee ./log/run.log)"
+  },
+  {
+    "page": 111,
+    "chars": 17,
+    "title": "Project Directory",
+    "sample": "Project Directory"
+  },
+  {
+    "page": 112,
+    "chars": 92,
+    "title": "How Get Help?",
+    "sample": "How Get Help? | For example: | - dc_shell> man set_input_delay | - dc_shell> set_input_delay -help"
+  }
+]

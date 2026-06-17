@@ -1,0 +1,9 @@
+Hierarchical Wire Load Models
+- Enclose: DC uses the wire load model of the smallest design that
+fully encloseds the net. If the design enclosing the net has no wire load
+model, the tool traverses the design hierearchy upward until it finds a wire
+load model. Enclosed mode is more accurate than top mode when cells in
+the same design are placed in a contiguous region during layout.
+- Segmented: DC determines the wire load models of each segment of
+a net by the design encompassing the segment. Nets crossing hierarchical
+boundaries are divided into segments.

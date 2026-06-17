@@ -1,0 +1,12 @@
+Compile Command and Options
+- compile –map_effort medium | high
+- high, it does critical path re-synthesis, but it will use
+more CPU time, in some case the action of compile
+will not terminate.
+- medium, by default, good for many design.
+- Compile –incremental_mapping
+- Perform incremental gate level optimization but no logical
+level optimization
+- Compile –only_design_rule
+- Perform only design rule fixing, take less time than regular
+compile because it is incremental.

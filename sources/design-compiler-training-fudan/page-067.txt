@@ -1,0 +1,13 @@
+Flatten
+- Flatten is default OFF
+- Remove all intermediate variable
+- Result a two-level sum-of-product form
+- Example: set_flatten true|false
+f0 = a · t
+f1 = d + t
+f2 = t´ · e
+t= b + c
+f0 = a · b + a · c
+f1 = d + b + c
+f2 = b´ · c´ · e
+Before Flattening After Flattening

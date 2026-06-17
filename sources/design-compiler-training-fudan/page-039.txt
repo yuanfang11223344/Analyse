@@ -1,0 +1,9 @@
+Hierarchical Wire Load Models
+- DC supports three modes for determining which wire
+load model to use for nets that cross hierarchical
+boundaries:
+- Top: DC models nets as if the design has no hierarchy and uses the wire
+load model specified for the top level of the design hierarchy for all nets in
+a design and its sub-designs.
+- Enclosed: …
+- Segmented: …

@@ -1,0 +1,6 @@
+Setting Output Loading Capacitance (pF)
+-set_load
+- set _load 2 in1
+- set port_load [expr 2.5+3*[load_of tech_lib/IV/A]]
+- set_load $port_load [all_outputs]
+- set_load [load_of tech_lib/IV/Z] {input_1 inoput_2}

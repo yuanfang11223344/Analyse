@@ -1,0 +1,4 @@
+This partitioning is recommended due to:
+- Possible technology-dependent ( “black box”) I/O pad cells
+- Possible untestable “Divide By” clock generation
+- Possible technology-dependent JTAG circuitry

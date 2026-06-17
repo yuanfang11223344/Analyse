@@ -1,0 +1,4 @@
+Clock Tree Modeling Example
+- create_clock –period 10 –waveform {0 5} [get_ports TCK]
+- set_clock_latency –rise 1 –fall 2 [get_ ports TCK]
+- set_clock_uncertainty –rise 0.8 –fall 0.5 [get_ ports TCK]

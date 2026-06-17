@@ -1,0 +1,10 @@
+Timing Constraints for Sequential
+Circuit
+- create_clock: define your clock’s waveform &
+respect the set-up time requirements of all
+clocked flip-flops.
+create_clock -period 12.5 -waveform {0 6.25}
+[get_ports clkM]
+- set_dont_touch_network: do not re-bufer the
+clock network.
+- set_dont_touch_network [get_clocks clkM]

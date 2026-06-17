@@ -1,0 +1,27 @@
+Startpoint: ARM7TDMI/debuger/tms_latch_reg/CKN
+(internal path startpoint clocked by HCLK)
+Endpoint: ARM7TDMI/debuger/tms_s_reg
+(falling edge-triggered flip-flop clocked by HCLK)
+Path Group: HCLK
+Path Type: min
+Point Incr Path
+------------------------------------------------------------------------------
+clock HCLK (fall edge) 6.00 6.00
+clock network delay (propagated) 0.87 6.87
+input external delay 0.00 6.87 f
+ARM7TDMI/debuger/tms_latch_reg/CKN (FFDNHD2X) 0.00 6.87 f
+ARM7TDMI/debuger/tms_latch_reg/Q (FFDNHD2X) <- 0.18 & 7.05 r
+ARM7TDMI/debuger/tms_s_reg/D (FFDNHD2X) 0.00 & 7.05 r
+data arrival time 7.05
+clock HCLK (fall edge) 6.00 6.00
+clock network delay (propagated) 0.87 6.87
+clock uncertainty 0.10 6.97
+ARM7TDMI/debuger/tms_s_reg/CKN (FFDNHD2X) 6.97 f
+library hold time 0.08 7.05
+data required time 7.05
+------------------------------------------------------------------------------
+data required time 7.05
+data arrival time -7.05
+------------------------------------------------------------------------------
+slack (MET) 0.00
+How to read timing report?

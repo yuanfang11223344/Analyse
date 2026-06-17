@@ -1,0 +1,10 @@
+Optimization Constraints
+- Optimization constraints, in order of attention are
+- Maximum delay
+- Minimum delay
+- (Maximum power)
+- Minimum area
+- About combinational circuit, we only set maximum
+delay & minimum delay for timing constraint.
+set_max_delay 5.0 –from port_A –to port_B
+set_min_delay 2.0 –from port_A –to port_B

@@ -1,0 +1,10 @@
+- To specify technology libraries, you must specify the
+target library and link library.
+- Design Compiler uses the target library to build a circuit. During
+mapping, Design Compiler selects functionally correct gates
+from the target library. It also calculates the timing of the circuit,
+using the vendor-supplied timing data for these gates.
+- Design Compiler uses the link library to resolve references. For
+a design to be complete, it must connect to all the library
+components and designs it references. This process is called
+linking the design or resolving references.

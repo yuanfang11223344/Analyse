@@ -1,0 +1,4 @@
+How Get Help?
+For example:
+- dc_shell> man set_input_delay
+- dc_shell> set_input_delay -help

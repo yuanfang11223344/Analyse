@@ -1,0 +1,14 @@
+Combinational Mapping
+- Mapping rearranges
+components,
+combining and re-
+combining logic into
+different components.
+- May use different
+algorithms such as
+cloning, resizing or
+buffering.
+- Try to meet the
+design rule
+constraints and
+timing area goals.

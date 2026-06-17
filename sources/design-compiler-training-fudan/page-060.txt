@@ -1,0 +1,9 @@
+Setting Area Constraint
+- Area Unit:
+- Equivalent gate counts
+- um2
+- Transistors
+- To reduce the area as much as possible
+set max_area 0
+The area violation will disclose the total
+area of your design after synthesis.
