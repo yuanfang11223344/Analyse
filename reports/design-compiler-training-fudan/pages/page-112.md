@@ -17,9 +17,9 @@
 > - dc_shell> man set_input_delay
 > - dc_shell> set_input_delay -help
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Help 页告诉我们不要靠记忆硬背命令选项。`man` 和 `-help` 是确认对象类型、默认值和参数含义的第一手入口。
+这页讲 Help。图中命令 `man set_input_delay` 和 `set_input_delay -help` 代表工具内的一手文档入口。它的意义是：命令参数、对象类型和默认行为不要靠猜，要直接查工具帮助。
 
 ## 原文逐项解读
 

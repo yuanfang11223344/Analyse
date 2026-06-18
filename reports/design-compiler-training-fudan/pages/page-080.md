@@ -18,9 +18,9 @@
 > - All the net and cell timing arcs along the path are added
 > together.
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
+这页内容代表设计环境建模。图中或命令表达的是模块外部世界：上游驱动能力、下游电容负载、外部 fanout、PVT 条件或互连 RC 估计。它们会改变 cell delay、transition、buffer 插入和 sizing 选择。
 
 ## 原文逐项解读
 

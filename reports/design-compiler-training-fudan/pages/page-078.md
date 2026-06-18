@@ -14,9 +14,9 @@
 
 > Timing Paths Exercise
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Timing Paths Exercise 是练习页，重点不是答案本身，而是训练从电路图中找 startpoint、endpoint、clock domain 和路径类型。
+这页是 timing path 练习，图中的意义是训练我们从电路结构里识别 startpoint、endpoint 和 path type。真正重要的不是答案，而是形成读电路图的顺序：先找寄存器/端口，再找 clock，再判断路径类型。
 
 ## 原文逐项解读
 

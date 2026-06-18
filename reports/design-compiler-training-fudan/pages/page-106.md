@@ -17,9 +17,9 @@
 > - Possible untestable “Divide By” clock generation
 > - Possible technology-dependent JTAG circuitry
 
-## 页面结构与图示分析
+## 图中内容理解
 
-推荐分区的理由包括 I/O pad 黑盒、分频时钟和工艺相关单元等。图示逻辑是：不同工程属性的逻辑不应混在普通 RTL block 中。
+这页说明推荐分区的原因。图中/文字中的 I/O pad、分频时钟、工艺相关单元代表不同工程属性：有些是黑盒，有些影响测试，有些依赖工艺库。它们不应随便混入普通逻辑 block。
 
 ## 原文逐项解读
 

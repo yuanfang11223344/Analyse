@@ -16,9 +16,9 @@
 > You set the goals (through constraints)
 > Design Compiler optimizes the design to meet your goals
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
+这页表达的是 constraint-driven synthesis：综合结果由约束驱动。图/文字背后的意思是，DC 不知道你想要高性能、低面积还是满足某个接口时序，除非你用 constraints 明确告诉它。对代码而言，RTL 描述功能；对工具而言，constraints 才描述目标；对电路而言，目标会影响 cell sizing、buffer 插入和逻辑重构。
 
 ## 原文逐项解读
 

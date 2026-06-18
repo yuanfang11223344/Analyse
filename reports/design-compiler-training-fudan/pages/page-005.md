@@ -16,9 +16,9 @@
 > Design Compiler uses Static Timing Analysis (STA)
 > to calculate the timing of the paths in the design.
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
+这页表达的是 path-based synthesis：DC 通过 STA 分析 timing path，再围绕关键路径优化。它代表的电路观点是：性能瓶颈不是平均分布在所有逻辑上，而是落在特定 startpoint 到 endpoint 的路径上。对我们写代码/约束的启示是，优化要看路径报告，而不是只看模块规模或代码行数。
 
 ## 原文逐项解读
 

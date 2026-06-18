@@ -22,9 +22,9 @@
 > hierarchy in the current design by creating
 > a unique design for each cell instance)
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
+这页表达的是设计读入流程。`read/read_verilog/read_vhdl` 更像直接导入文件，`analyze + elaborate` 更像先编译 HDL 再展开层次和布尔函数。它代表的代码意义是：RTL 文件进入 DC 后不再只是文本，而变成 design、port、net、cell 等可查询对象。
 
 ## 原文逐项解读
 

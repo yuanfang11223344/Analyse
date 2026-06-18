@@ -14,9 +14,9 @@
 
 > Constraining the Input Paths
 
-## 页面结构与图示分析
+## 图中内容理解
 
-这页延续输入路径约束，通常把图示预算转成命令。重点是区分 max input delay 用于 setup，min input delay 用于 hold。
+这张图延续输入路径约束，把图中的外部 delay 落成 DC 命令。它代表的流程是：先确定 reference clock，再确定外部 launch 到 input port 的最大/最小延迟，最后把这些数写到输入端口对象上。
 
 ## 原文逐项解读
 

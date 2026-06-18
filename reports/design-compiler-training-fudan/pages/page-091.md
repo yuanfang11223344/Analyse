@@ -14,9 +14,9 @@
 
 > Constraining the Output Paths
 
-## 页面结构与图示分析
+## 图中内容理解
 
-这页延续输出路径约束，强调 reference clock 和 output delay 的关系。多时钟接口若 reference clock 选错，整个接口时序都会失真。
+这张图延续输出路径约束，把下游需求转换为 `set_output_delay`。它提醒我们：输出约束不是为了描述当前模块内部慢，而是为了告诉 DC 要把多少周期预算留给模块外部。
 
 ## 原文逐项解读
 

@@ -14,9 +14,9 @@
 
 > Timing Paths in Design Compiler
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Timing Paths 图示通常用于把 input path、output path、reg-to-reg path、combinational path 分清。不同路径类型对应不同约束写法。
+这张图表达 timing path 的分类。input path 从输入端口到寄存器，output path 从寄存器到输出端口，register-to-register path 在两个寄存器之间，combinational path 没有寄存器边界。不同路径类型决定约束方法不同。
 
 ## 原文逐项解读
 

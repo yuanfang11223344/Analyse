@@ -14,9 +14,9 @@
 
 > Constraining the Input Paths
 
-## 页面结构与图示分析
+## 图中内容理解
 
-输入路径图中，外部逻辑先消耗一部分周期，本模块只负责剩余路径。图下方 valid new data 区间说明 input delay 会影响内部可用 setup budget。
+这张图具体展开输入路径约束。左侧外部逻辑发起数据，本模块内部逻辑只获得周期剩余部分。下方波形中的 valid data window 表示数据必须在捕获边沿前稳定。它对应的脚本含义是 `set_input_delay -max/-min` 要分别服务 setup/hold。
 
 ## 原文逐项解读
 

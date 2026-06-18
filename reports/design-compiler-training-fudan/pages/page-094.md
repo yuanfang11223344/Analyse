@@ -14,9 +14,9 @@
 
 > Timing Report: Path Information Section
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Path Information Section 是报告身份区：Startpoint、Endpoint、Path Group、Path Type 决定后面数字应该按 setup 还是 hold 理解。
+这页聚焦 timing report 的 Path Information Section。它代表“路径身份识别”：startpoint/endpoint 告诉我们路径两端，path group 告诉我们所属时钟组，path type 告诉我们是 setup/max 还是 hold/min。身份没读懂，后面的数字就没有意义。
 
 ## 原文逐项解读
 

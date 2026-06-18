@@ -14,9 +14,9 @@
 
 > Timing Report: Path Delay Section
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Path Delay Section 是数据到达账本：Point/Incr/Path 显示每个 pin、cell、net 对 arrival time 的贡献。优化关键路径主要看这里。
+这页聚焦 Path Delay Section。它代表 data arrival 的计算过程：路径经过哪些 pin/cell/net，每一步增加多少 delay，累计到 endpoint 是多少时间。对电路优化而言，这部分最能暴露慢在哪里。
 
 ## 原文逐项解读
 

@@ -14,9 +14,9 @@
 
 > Timing Report: Summary Section
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Summary Section 给出最终 slack。它是结果，不是原因；原因要回到 delay section 和 required section 找。
+这页聚焦 Summary Section。它代表 timing report 的结论层：required time 与 arrival time 做差得到 slack。图中结论只能告诉你是否满足，不能告诉你原因；原因必须回到 delay/required 段找。
 
 ## 原文逐项解读
 

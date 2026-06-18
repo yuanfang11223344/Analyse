@@ -14,9 +14,9 @@
 
 > clock path & data path
 
-## 页面结构与图示分析
+## 图中内容理解
 
-clock path & data path 的图示核心是分离两条时间链：clock 决定采样时刻，data 决定数据到达时刻，setup/hold 就是比较二者关系。
+这张图的核心是区分 clock path 和 data path。clock path 决定采样边沿何时到达，data path 决定数据何时到达。setup/hold 本质上是在比较这两条路径的相对时间，而不是只看组合逻辑延迟。
 
 ## 原文逐项解读
 

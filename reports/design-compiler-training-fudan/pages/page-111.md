@@ -14,9 +14,9 @@
 
 > Project Directory
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Project Directory 不是纯管理问题，而是综合可复现性的基础。脚本、报告、日志、源文件若混在一起，debug 会非常困难。
+这页的 Project Directory 图/内容代表工程目录结构。代码、脚本、库、log、report、输出网表各自有位置，才能保证一次综合 run 可复查、可比较、可交接。
 
 ## 原文逐项解读
 

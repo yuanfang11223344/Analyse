@@ -14,9 +14,9 @@
 
 > Remove Glue Logic Between Blocks
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Remove Glue Logic Between Blocks 强调把边界逻辑移入明确归属的 block，减少跨层级优化依赖。
+这张图表达 Remove Glue Logic Between Blocks。处理流程是把边界上的零散逻辑移入明确归属的 block，或者重定义接口。这样每个 block 的输入输出更清楚，约束也更容易写。
 
 ## 原文逐项解读
 

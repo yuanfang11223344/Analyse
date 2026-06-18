@@ -14,9 +14,9 @@
 
 > Design Objects: Verilog Perspective
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页视觉结构较简单，通常由标题或少量命令构成。重点不是版面复杂度，而是确认这个标题/命令在流程中改变了什么对象或引入了什么概念。
+这页从 Verilog 视角解释对象关系：模块定义形成 design，端口形成 ports，内部连线形成 nets，实例形成 cells。它帮助我们把 RTL 代码结构翻译成 DC 查询对象。写约束时，要能从 Verilog 名称追踪到 `get_ports`、`get_nets`、`get_cells`。
 
 ## 原文逐项解读
 

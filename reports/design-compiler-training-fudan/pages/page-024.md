@@ -15,9 +15,9 @@
 > Conmands used to Define the
 > Design Environment
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页视觉结构较简单，通常由标题或少量命令构成。重点不是版面复杂度，而是确认这个标题/命令在流程中改变了什么对象或引入了什么概念。
+这页列出定义 design environment 的命令集合。它不是单个电路图，而是一张“环境建模清单”：operating condition、drive、load、fanout、wire load 等分别描述 PVT、输入驱动、输出负载、外部扇出和互连估计。
 
 ## 原文逐项解读
 

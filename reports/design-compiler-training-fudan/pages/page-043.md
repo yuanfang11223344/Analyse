@@ -15,9 +15,9 @@
 > Design Constraints: Design Rule Constraints
 > and Optimization Constraints
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页视觉结构较简单，通常由标题或少量命令构成。重点不是版面复杂度，而是确认这个标题/命令在流程中改变了什么对象或引入了什么概念。
+这页内容代表约束模型。图中或命令表达的不是电路功能，而是 DC 必须满足的边界条件：哪些是硬性 design rule，哪些是 timing budget，哪些是面积/速度目标。综合时电路结构会围绕这些目标被重写。
 
 ## 原文逐项解读
 

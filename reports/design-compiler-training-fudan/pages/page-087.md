@@ -19,9 +19,9 @@
 > set_clock_latency –source 3 [get_clocks TCK]
 > set_clock_latency 1 [get_clocks TCK]
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
+这页内容代表 STA 或时序建模。图中或文字中的 clock、data path、latency、uncertainty、arrival、required、slack 都属于同一套时间账本。要理解它，就要判断每个对象是在 launch 侧、capture 侧、data path 侧还是 required time 侧。
 
 ## 原文逐项解读
 

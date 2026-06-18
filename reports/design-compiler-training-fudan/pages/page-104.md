@@ -14,9 +14,9 @@
 
 > Avoid Glue Logic
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Avoid Glue Logic 的图示/标题强调不要在 block 之间留下零散组合逻辑；这些逻辑会让接口时序和模块责任模糊。
+这张图/标题强调 Avoid Glue Logic。glue logic 指夹在两个大 block 之间的零散组合逻辑。它在代码里可能只是几行 assign，但在电路和 STA 中会制造跨边界路径，破坏模块责任。
 
 ## 原文逐项解读
 

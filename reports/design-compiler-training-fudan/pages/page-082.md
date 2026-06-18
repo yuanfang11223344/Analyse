@@ -14,9 +14,9 @@
 
 > 本页 OCR 可抽取文本为空或很少，需要主要依据截图、页码位置和前后章节关系理解。
 
-## 页面结构与图示分析
+## 图中内容理解
 
-这是 setup/hold 检查转向 clock tree modeling 的边界页。理想时钟假设到这里结束，后续要考虑 latency 和 uncertainty。
+这页代表从理想 clock 过渡到 clock tree modeling。电路含义是：真实芯片里时钟不会同时到达所有触发器，clock latency、uncertainty、source latency 会改变 setup/hold 的 required time。
 
 ## 原文逐项解读
 

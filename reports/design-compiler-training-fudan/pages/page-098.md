@@ -14,9 +14,9 @@
 
 > 本页 OCR 可抽取文本为空或很少，需要主要依据截图、页码位置和前后章节关系理解。
 
-## 页面结构与图示分析
+## 图中内容理解
 
-这是 timing report 练习/过渡页，提醒读者把报告拆成身份、arrival、required、summary 四段来读。
+这页是 timing report 练习/过渡图，表达的是读报告的训练流程：先拆分报告区域，再把每个数归入 arrival 或 required 账本，最后解释 slack。
 
 ## 原文逐项解读
 

@@ -40,9 +40,9 @@
 > slack (MET) 0.00
 > How to read timing report?
 
-## 页面结构与图示分析
+## 图中内容理解
 
-图中是一段完整 timing report。结构上先列 path information，再列 data arrival，再列 data required，最后给 slack。读报告时要像对账一样逐行追踪。
+这张图是一段 timing report，不是普通文字截图。它代表一条 min/hold path 的完整时间账：上半部分列 path identity 和 data arrival，下半部分列 data required，最后用 required - arrival 得到 slack。它对应的处理流程是：先确认 startpoint/endpoint/path type，再沿 Point/Incr/Path 读每个延迟贡献。
 
 ## 原文逐项解读
 

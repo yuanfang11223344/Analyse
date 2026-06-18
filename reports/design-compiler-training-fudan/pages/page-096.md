@@ -14,9 +14,9 @@
 
 > Timing Report: Path Required Section
 
-## 页面结构与图示分析
+## 图中内容理解
 
-Path Required Section 是约束账本：clock、latency、uncertainty、setup/hold requirement 共同决定数据最晚或最早必须满足的边界。
+这页聚焦 Path Required Section。它代表 required time 的计算过程：捕获 clock、clock network delay、uncertainty、setup/hold requirement 共同决定数据必须满足的边界。它解释 slack 为什么是这个数。
 
 ## 原文逐项解读
 

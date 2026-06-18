@@ -15,9 +15,9 @@
 > Setting Wire Load Mode
 > dc_shell-t> set_wire_load_mode <top|enclosed|segmented>
 
-## 页面结构与图示分析
+## 图中内容理解
 
-本页视觉结构较简单，通常由标题或少量命令构成。重点不是版面复杂度，而是确认这个标题/命令在流程中改变了什么对象或引入了什么概念。
+这页内容代表设计环境建模。图中或命令表达的是模块外部世界：上游驱动能力、下游电容负载、外部 fanout、PVT 条件或互连 RC 估计。它们会改变 cell delay、transition、buffer 插入和 sizing 选择。
 
 ## 原文逐项解读
 
