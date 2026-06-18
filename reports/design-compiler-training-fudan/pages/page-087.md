@@ -10,7 +10,7 @@
 - **阅读问题**：本页要回答：source latency 和普通 clock latency 有什么区别？
 - **前后关系**：这部分回答“如何判断结果是否真的满足时序”：看路径、看 required/arrival、看 slack。
 
-## 原文要点
+## 原文摘录
 
 > Modeling Source Latency
 > - Source latency is the propagation time from the actual clock
@@ -19,25 +19,44 @@
 > set_clock_latency –source 3 [get_clocks TCK]
 > set_clock_latency 1 [get_clocks TCK]
 
-## 原文解读
+## 页面结构与图示分析
 
-本页讲 source latency：它表示真实 clock origin 到设计中 clock definition point 的传播时间。示例中 `set_clock_latency -source 3 [get_clocks TCK]` 设置源延迟，普通 `set_clock_latency 1` 则描述后续网络延迟。
+本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
 
-本页关联的关键对象/命令：`create_clock`, `set_clock_latency`
+## 原文逐项解读
+
+1. **原文**：`Modeling Source Latency`
+   **解读**：标题说明本页讨论 source latency，也就是时钟源头到设计中 clock 定义点之前的延迟。
+2. **原文**：`- Source latency is the propagation time from the actual clock`
+   **解读**：这一句给出定义的前半部分：source latency 是真实 clock origin 出发后的传播时间，不是普通数据路径延迟。
+3. **原文**：`origin to the clock definition point in the design`
+   **解读**：这一句补全定义：传播终点是设计中定义 clock 的位置。也就是说 source latency 覆盖的是 clock 进入设计或到达定义点之前的那段路径。
+4. **原文**：`create_clock –period 10 –waveform {0 5} [get_ports TCK]`
+   **解读**：先定义 TCK clock 对象。只有先有 clock object，后面才能对这个 clock 设置 source latency 或 network latency。
+5. **原文**：`set_clock_latency –source 3 [get_clocks TCK]`
+   **解读**：`-source 3` 表示设置 source latency 为 3。它描述真实时钟源到 TCK clock definition point 之间已经消耗的时间。
+6. **原文**：`set_clock_latency 1 [get_clocks TCK]`
+   **解读**：不带 `-source` 的 latency 通常表示 clock definition point 之后的 network latency。这里的 1 与前面的 source 3 表示两段不同的时钟延迟。
+
+## 关键概念拆解
+
+- **相关对象/命令**：`create_clock`, `set_clock_latency`
+- **它在流程中的位置**：本页属于“STA 与时序报告：路径、clock model、I/O 约束和 slack”。这意味着它不是孤立知识点，而是在完整 DC 流程中承担“建模时钟网络”的作用。
+- **要验证的地方**：学习完本页后，应能在脚本、设计对象或报告中找到对应证据；例如库是否加载、端口是否被约束、路径是否出现在 timing report、或优化结果是否反映在面积/时序报告里。
 
 ## 我的理解
 
-我的理解是：source latency 把芯片外部或时钟源到定义点之前的时间纳入模型；network latency 则更偏向定义点之后的时钟网络。区分二者有助于把系统级时钟路径和设计内部 clock tree 分开。
+我的理解是：source latency 和普通 clock latency 最大区别在边界。source latency 属于 clock 到达定义点之前的系统/源端路径，network latency 更偏向定义点之后的片上 clock network。把二者混在一起会导致时钟延迟重复或漏算。
 
-把它放回完整 DC 流程里看，本页不是孤立知识点，而是在帮助我们更准确地描述“设计、环境、约束、优化结果”中的一个环节。读这一页时，我会优先问：它改变的是 DC 数据库里的哪个对象？它会让 compile 的优化空间变大还是变小？它最终应该在什么报告里被验证？
+这页本质上是在教我们把 clock path 分段建模，而不是用一个笼统数字糊住全部时钟延迟。
 
-## 实操提醒
+## 对我们的启示
 
-建模 clock latency 时标清 source latency 与 network latency 的边界，避免把同一段时钟延迟重复计算。
+对我们的启示：做层次化综合或顶层集成时，要问清 clock 是在哪里定义的。若 clock definition point 不同，source latency 和 network latency 的边界也会变，脚本不能机械复用。
 
 ## 本页小结
 
-本页的核心收获：Modeling Source Latency 这一页应被理解为“建模时钟网络”的读书笔记节点；掌握它的标准不是背下标题，而是能说明它如何影响后续约束、优化或 timing 报告。
+本页的核心不是“Modeling Source Latency”这个标题本身，而是理解它如何影响 DC 对设计的认识、优化空间和报告解释。复习时不要只背命令，要能说清：它作用于谁、设置什么、为什么需要、错了会导致什么后果。
 
 ## 导航
 

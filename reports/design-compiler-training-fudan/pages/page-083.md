@@ -10,7 +10,7 @@
 - **阅读问题**：本页要回答：clock latency/uncertainty 如何影响 setup/hold？
 - **前后关系**：这部分回答“如何判断结果是否真的满足时序”：看路径、看 required/arrival、看 slack。
 
-## 原文要点
+## 原文摘录
 
 > Clock Tree Modeling
 > - Two parameter to model:
@@ -19,25 +19,46 @@
 > - Specify uncertainty(skew) of clock network
 > - set_clock_uncertainty –rise tp –fall tm [get_ports TCK]
 
-## 原文解读
+## 页面结构与图示分析
 
-本页讲 clock tree modeling。clock latency、uncertainty、source latency 用来描述时钟从源头到触发器的延迟、偏差和不确定性。
+本页主要是文字/命令列表结构。阅读顺序应从标题开始，再看项目符号或命令示例：标题给主题，项目符号给定义和限制，命令示例说明如何在 dc_shell 中落地。
 
-本页关联的关键对象/命令：`set_clock_latency`, `set_clock_uncertainty`
+## 原文逐项解读
+
+1. **原文**：`Clock Tree Modeling`
+   **解读**：这是时钟网络建模。latency 描述时钟到达延迟，uncertainty 描述抖动、偏斜或保守裕量，它们会改变 setup/hold 判断。
+2. **原文**：`- Two parameter to model:`
+   **解读**：这是标题下的一个子要点，通常在补充定义、适用对象、命令参数或注意事项。读时要把它和本页标题连起来。
+3. **原文**：`- Specify clock network latency`
+   **解读**：这是时钟网络建模。latency 描述时钟到达延迟，uncertainty 描述抖动、偏斜或保守裕量，它们会改变 setup/hold 判断。
+4. **原文**：`- set_clock_latency –rise tr –fall tf [get_ports TCK]`
+   **解读**：这是时钟网络建模。latency 描述时钟到达延迟，uncertainty 描述抖动、偏斜或保守裕量，它们会改变 setup/hold 判断。
+5. **原文**：`- Specify uncertainty(skew) of clock network`
+   **解读**：这是时钟网络建模。latency 描述时钟到达延迟，uncertainty 描述抖动、偏斜或保守裕量，它们会改变 setup/hold 判断。
+6. **原文**：`- set_clock_uncertainty –rise tp –fall tm [get_ports TCK]`
+   **解读**：`set_clock_uncertainty` 建模 clock skew、jitter 或保守裕量。uncertainty 会收紧时序要求，因此数值越大，timing 越难满足。
+
+## 关键概念拆解
+
+- **相关对象/命令**：`set_clock_latency`, `set_clock_uncertainty`
+- **它在流程中的位置**：本页属于“STA 与时序报告：路径、clock model、I/O 约束和 slack”。这意味着它不是孤立知识点，而是在完整 DC 流程中承担“建模时钟网络”的作用。
+- **要验证的地方**：学习完本页后，应能在脚本、设计对象或报告中找到对应证据；例如库是否加载、端口是否被约束、路径是否出现在 timing report、或优化结果是否反映在面积/时序报告里。
 
 ## 我的理解
 
-我的理解是：clock 不是理想同时到达的信号。setup 和 hold 对 clock latency/uncertainty 的敏感方向不同，所以同一个 clock model 会同时影响最大/最小路径判断。
+我的理解是：STA 是综合结果的判卷过程。每个数字都应放入 arrival time 或 required time 的账本里看；只看 slack 会错过真正原因，必须追踪路径身份、clock model、data path delay 和约束扣减。
 
-把它放回完整 DC 流程里看，本页不是孤立知识点，而是在帮助我们更准确地描述“设计、环境、约束、优化结果”中的一个环节。读这一页时，我会优先问：它改变的是 DC 数据库里的哪个对象？它会让 compile 的优化空间变大还是变小？它最终应该在什么报告里被验证？
+更具体地说，读这一页时我会把它拆成三层：第一层是原文在定义什么对象或命令；第二层是它改变了 DC 数据库中的哪个属性；第三层是这个改变会怎样影响后续 compile、report 或工程维护。只有把这三层连起来，才算真正读懂，而不是记住几个英文命令。
 
-## 实操提醒
+## 对我们的启示
 
-写 `set_clock_latency`、`set_clock_uncertainty` 时要区分 rise/fall、source/network、pre-CTS/post-CTS 语境。
+对我们的启示：读 timing report 要像查账。先看 Path Type 和 start/end，再看 clock 与 data 分别怎么算，最后才看 slack；这样才能知道该改约束、改逻辑还是改 clock model。
+
+如果把这页用于真实项目，我会把它转成一个检查问题：当前脚本有没有明确表达这一页要求的环境、约束或报告检查？如果没有，这就是后续综合结果不可信或难以复现的风险点。
 
 ## 本页小结
 
-本页的核心收获：Clock Tree Modeling 这一页应被理解为“建模时钟网络”的读书笔记节点；掌握它的标准不是背下标题，而是能说明它如何影响后续约束、优化或 timing 报告。
+本页的核心不是“Clock Tree Modeling”这个标题本身，而是理解它如何影响 DC 对设计的认识、优化空间和报告解释。复习时不要只背命令，要能说清：它作用于谁、设置什么、为什么需要、错了会导致什么后果。
 
 ## 导航
 
