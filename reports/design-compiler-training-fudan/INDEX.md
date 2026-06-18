@@ -37,27 +37,27 @@
 | 18 | Design Objects In Synthesis | 前端准备：库、读入设计和 DC 对象模型 | 理解 DC 对象模型 | [Page 018](pages/page-018.md) |
 | 19 | Design Objects: Verilog Perspective | 前端准备：库、读入设计和 DC 对象模型 | 理解 DC 对象模型 | [Page 019](pages/page-019.md) |
 | 20 | Design Objects: Schematic Perspective | 前端准备：库、读入设计和 DC 对象模型 | 理解 DC 对象模型 | [Page 020](pages/page-020.md) |
-| 21 | Unit in Standard Library | 前端准备：库、读入设计和 DC 对象模型 | 配置综合库 | [Page 021](pages/page-021.md) |
-| 22 | Library units visual note | 前端准备：库、读入设计和 DC 对象模型 | 配置综合库 | [Page 022](pages/page-022.md) |
+| 21 | Unit in Standard Library | 前端准备：库、读入设计和 DC 对象模型 | 确认库单位 | [Page 021](pages/page-021.md) |
+| 22 | Library units visual note | 前端准备：库、读入设计和 DC 对象模型 | 确认库单位 | [Page 022](pages/page-022.md) |
 | 23 | 2. Define Design Environment | 设计环境建模：工艺、负载、扇出和线负载 | 流程节点说明 | [Page 023](pages/page-023.md) |
 | 24 | Conmands used to Define the | 设计环境建模：工艺、负载、扇出和线负载 | 流程节点说明 | [Page 024](pages/page-024.md) |
 | 25 | Set Operating Conditions | 设计环境建模：工艺、负载、扇出和线负载 | 建模 PVT 环境 | [Page 025](pages/page-025.md) |
-| 26 | Set Input Pulling Resistance (khoms) | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 026](pages/page-026.md) |
-| 27 | Set Input Pulling Resistance (khoms) | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 027](pages/page-027.md) |
-| 28 | Setting Output Loading Capacitance (pF) | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 028](pages/page-028.md) |
+| 26 | Set Input Pulling Resistance (khoms) | 设计环境建模：工艺、负载、扇出和线负载 | 建模输入驱动 | [Page 026](pages/page-026.md) |
+| 27 | Set Input Pulling Resistance (khoms) | 设计环境建模：工艺、负载、扇出和线负载 | 建模输入驱动 | [Page 027](pages/page-027.md) |
+| 28 | Setting Output Loading Capacitance (pF) | 设计环境建模：工艺、负载、扇出和线负载 | 建模输出负载 | [Page 028](pages/page-028.md) |
 | 29 | Setting Output Loading Capacitance (pF) | 设计环境建模：工艺、负载、扇出和线负载 | 建模输出负载 | [Page 029](pages/page-029.md) |
-| 30 | set_fanout_load | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 030](pages/page-030.md) |
-| 31 | set_load V.S. set_fanout_load | 设计环境建模：工艺、负载、扇出和线负载 | 建模输出负载 | [Page 031](pages/page-031.md) |
+| 30 | set_fanout_load | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 030](pages/page-030.md) |
+| 31 | set_load V.S. set_fanout_load | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和电容负载 | [Page 031](pages/page-031.md) |
 | 32 | Design Constraints: set_max_fanout | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 032](pages/page-032.md) |
-| 33 | set_fanout_load V.S. set_max_fanout | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 033](pages/page-033.md) |
+| 33 | set_fanout_load V.S. set_max_fanout | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 033](pages/page-033.md) |
 | 34 | Case Study: fanout_load & max_fanout_load | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 034](pages/page-034.md) |
-| 35 | Case Study | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 035](pages/page-035.md) |
+| 35 | Case Study | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 035](pages/page-035.md) |
 | 36 | Net Delay | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 036](pages/page-036.md) |
-| 37 | Wire Load Model | 设计环境建模：工艺、负载、扇出和线负载 | 区分扇出环境和扇出规则 | [Page 037](pages/page-037.md) |
+| 37 | Wire Load Model | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 037](pages/page-037.md) |
 | 38 | Setting Wire Load Mode | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 038](pages/page-038.md) |
 | 39 | Hierarchical Wire Load Models | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 039](pages/page-039.md) |
 | 40 | Hierarchical Wire Load Models | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 040](pages/page-040.md) |
-| 41 | - set _wire_load_model -name “10*10” -library my_lib.db | 设计环境建模：工艺、负载、扇出和线负载 | 配置综合库 | [Page 041](pages/page-041.md) |
+| 41 | - set _wire_load_model -name “10*10” -library my_lib.db | 设计环境建模：工艺、负载、扇出和线负载 | 估计互连延迟 | [Page 041](pages/page-041.md) |
 | 42 | Design constraints transition | 设计环境建模：工艺、负载、扇出和线负载 | 流程节点说明 | [Page 042](pages/page-042.md) |
 | 43 | Design Constraints: Design Rule Constraints | 约束建模：设计规则、时序、面积和优先级 | 设置设计规则底线 | [Page 043](pages/page-043.md) |
 | 44 | - Design Rule Constraints: technology-specific | 约束建模：设计规则、时序、面积和优先级 | 设置设计规则底线 | [Page 044](pages/page-044.md) |
@@ -86,7 +86,7 @@
 | 67 | Flatten | 综合优化：逻辑优化、映射、compile 与报告 | 执行优化和映射 | [Page 067](pages/page-067.md) |
 | 68 | Gate Level Optimization | 综合优化：逻辑优化、映射、compile 与报告 | 设置设计规则底线 | [Page 068](pages/page-068.md) |
 | 69 | Combinational Mapping | 综合优化：逻辑优化、映射、compile 与报告 | 设置设计规则底线 | [Page 069](pages/page-069.md) |
-| 70 | Sequential Mapping | 综合优化：逻辑优化、映射、compile 与报告 | 配置综合库 | [Page 070](pages/page-070.md) |
+| 70 | Sequential Mapping | 综合优化：逻辑优化、映射、compile 与报告 | 执行优化和映射 | [Page 070](pages/page-070.md) |
 | 71 | Compile Command and Options | 综合优化：逻辑优化、映射、compile 与报告 | 设置设计规则底线 | [Page 071](pages/page-071.md) |
 | 72 | How to generate results and report | 综合优化：逻辑优化、映射、compile 与报告 | 理解优化目标和优先级 | [Page 072](pages/page-072.md) |
 | 73 | STA transition | STA 与时序报告：路径、clock model、I/O 约束和 slack | 流程节点说明 | [Page 073](pages/page-073.md) |
@@ -100,10 +100,10 @@
 | 81 | Setup and Hold Time Check | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建立 STA 基本概念 | [Page 081](pages/page-081.md) |
 | 82 | Clock tree modeling transition | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 082](pages/page-082.md) |
 | 83 | Clock Tree Modeling | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 083](pages/page-083.md) |
-| 84 | Clock Tree Modeling Example | STA 与时序报告：路径、clock model、I/O 约束和 slack | 设置时序预算 | [Page 084](pages/page-084.md) |
-| 85 | Effect of Clock Tree Modeling on Setup | STA 与时序报告：路径、clock model、I/O 约束和 slack | 配置综合库 | [Page 085](pages/page-085.md) |
-| 86 | Effect of Clock Tree Modeling on Hold | STA 与时序报告：路径、clock model、I/O 约束和 slack | 配置综合库 | [Page 086](pages/page-086.md) |
-| 87 | Modeling Source Latency | STA 与时序报告：路径、clock model、I/O 约束和 slack | 设置时序预算 | [Page 087](pages/page-087.md) |
+| 84 | Clock Tree Modeling Example | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 084](pages/page-084.md) |
+| 85 | Effect of Clock Tree Modeling on Setup | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 085](pages/page-085.md) |
+| 86 | Effect of Clock Tree Modeling on Hold | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 086](pages/page-086.md) |
+| 87 | Modeling Source Latency | STA 与时序报告：路径、clock model、I/O 约束和 slack | 建模时钟网络 | [Page 087](pages/page-087.md) |
 | 88 | Constraining the Input Paths | STA 与时序报告：路径、clock model、I/O 约束和 slack | 约束模块 I/O 路径 | [Page 088](pages/page-088.md) |
 | 89 | Constraining the Input Paths | STA 与时序报告：路径、clock model、I/O 约束和 slack | 约束模块 I/O 路径 | [Page 089](pages/page-089.md) |
 | 90 | Constraining the Output Paths | STA 与时序报告：路径、clock model、I/O 约束和 slack | 约束模块 I/O 路径 | [Page 090](pages/page-090.md) |
