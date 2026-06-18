@@ -9,7 +9,14 @@
 
 ## 目录约定
 
-- `reports/`：中文分析报告、分批笔记、总报告。
-- `sources/`：抽取文本、页索引、辅助拼板等可复查材料。
+- `reports/`：中文分析报告、逐页读书笔记、总报告。
+- `sources/`：抽取文本、页索引、可复查材料。
+- `git笔记/`：Git 学习资料与对应维护规则。
 
-提交和推送前先展示变更摘要，等待确认。
+## 维护入口
+
+- 本地权威工作树：`/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/分析仓库/analyse-repo`
+- GitHub 远端：`https://github.com/yuanfang11223344/Analyse.git`
+- Obsidian 镜像：`/Users/ganxuanzhi/Documents/Obsidian Vault/分析报告`
+
+提交和推送前先展示变更摘要，等待确认。仓库提交、推送和规则维护均以本地权威工作树为准。

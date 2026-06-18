@@ -38,7 +38,7 @@ git笔记/
 | 目标 | 路径 | 方式 |
 |---|---|---|
 | GitHub 仓库 | `yuanfang11223344/Analyse.git` → `git笔记/` | git push |
-| 本地缓存 | `/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/分析仓库/git笔记/` | cp |
+| 本地缓存 | `/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/分析仓库/analyse-repo/git笔记/` | cp |
 | 学习工作区 | `/Users/ganxuanzhi/学习/Git笔记/` | cp (源) |
 | Obsidian Vault | `/Users/ganxuanzhi/Documents/Obsidian Vault/Git笔记/` | cp |
 
@@ -69,6 +69,7 @@ git笔记/
 ## Git 同步规则
 
 - 仓库：`https://github.com/yuanfang11223344/Analyse.git`
+- 本地权威工作树：`/Users/ganxuanzhi/Documents/自动化任务/仓库缓存/分析仓库/analyse-repo`
 - 提交信息格式：`git笔记: <变更描述>`
 - 不提交 `.DS_Store`、临时文件
 - 提交前展示变更摘要，push 前确认

@@ -1,0 +1,40 @@
+# Page 097 - Timing Report: Summary Section
+
+![Page 97](../assets/pages/page-097.jpg)
+
+## 页面定位
+
+- **页码**：97/112
+- **所属阶段**：STA 与时序报告：路径、clock model、I/O 约束和 slack
+- **本页角色**：拆解 timing report
+- **阅读问题**：本页要回答：timing report 每一段数字从哪里来，slack 如何形成？
+- **前后关系**：这部分回答“如何判断结果是否真的满足时序”：看路径、看 required/arrival、看 slack。
+
+## 原文要点
+
+> Timing Report: Summary Section
+
+## 原文解读
+
+本页聚焦 Summary Section：`data required time - data arrival time = slack`，最后判断 MET 或 VIOLATED。
+
+本页关联的关键对象/命令：本页以概念/图示为主，重点看标题和图中对象关系。
+
+## 我的理解
+
+我的理解是：summary 是结果，不是原因。真正的原因要回到 path delay 和 path required 两段找。
+
+把它放回完整 DC 流程里看，本页不是孤立知识点，而是在帮助我们更准确地描述“设计、环境、约束、优化结果”中的一个环节。读这一页时，我会优先问：它改变的是 DC 数据库里的哪个对象？它会让 compile 的优化空间变大还是变小？它最终应该在什么报告里被验证？
+
+## 实操提醒
+
+报告复盘时写清楚 slack 的方向、数值和主因。
+
+## 本页小结
+
+本页的核心收获：Timing Report: Summary Section 这一页应被理解为“拆解 timing report”的读书笔记节点；掌握它的标准不是背下标题，而是能说明它如何影响后续约束、优化或 timing 报告。
+
+## 导航
+
+- 上一页：[Page 096](page-096.md)
+- 下一页：[Page 098](page-098.md)
